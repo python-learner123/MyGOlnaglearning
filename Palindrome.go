@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func check_pallindrom(num int) {
+func check_Palindrome(num int) {
 	number, temp := num, 0
 	//s := make([]int, 10)
 	for {
@@ -25,7 +25,7 @@ func main() {
 	//i = 101
 	//fmt.Println(i)
 	for i = 1001; i <= 9999; i++ {
-		check_pallindrom(i)
+		check_Palindrome(i)
 	}
 
 }
