@@ -16,12 +16,12 @@ func (s *Stack) Push(item interface{}) {
 func (s *Stack) Pop() {
 	if s.IsEmpty() {
 		fmt.Println("Stack is Empty")
-	}
+	}else {
 	stack_index := len(*s) - 1     // index starts from zero
 	last_item := (*s)[stack_index] // without ()   ->  invalid operation: s[stack_index] (type *Stack does not support indexing)
 	*s = (*s)[:stack_index]        // it excludes the last in range
 	fmt.Println("Item ", last_item, " has been Poped from Stack")
-
+	}
 }
 func (s *Stack) Traverse() {
 	fmt.Println("-------Items of Stack-------------")
